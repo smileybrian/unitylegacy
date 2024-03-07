@@ -1,0 +1,50 @@
+baseURL: https://template-demo.recoverysource.io/
+title: Statestown AA (Demo Site)
+
+languageCode: en-us
+theme: [aamod, mainroad]
+sectionPagesMenu: main
+paginate: 100
+buildFuture: true
+
+Params:
+  description: Statestown Demonstration
+  source: https://github.com/YOUR-PROJECT/YOUR-REPO/tree/master
+  #mapapikey: <https://developers.google.com/maps/documentation/embed/get-api-key>
+  mapapikey: "AIzaSyA0zujVEN5nzVoZDI7G-Lo3GTwoLBckZGw"
+  copyright: Statestown Demonstration
+  phone: 123-456-7890
+  logo:
+    image: img/AAlogo.webp
+    title: Statestown Demonstration
+  toc: true
+  mainSections: [home, meetings, about, events]
+  sidebar:
+    single: right
+    home: right
+    widgets: [resources, eventsidemenu, aasites]
+  widgets:
+
+    resources:
+      cached: true
+      links:
+      - title: Meeting Schedule
+        url: /meeting-schedule.pdf
+      - title: Big Book Online
+        url: https://www.aa.org/bigbookonline/
+
+    aasites:
+      cached: true
+      links:
+      - title: A.A. Area 63 (S.D.)
+        url: https://area63aa.org/
+      - title: A.A. World Services
+        url: https://www.aa.org/
+      - title: A.A. Grapevine
+        url: http://www.aagrapevine.org/
+
+markup:
+  goldmark:
+    renderer:
+      # Permit raw HTML in content
+      unsafe: true
